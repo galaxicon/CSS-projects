@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body {
+                box-sizing: border-box;
+                background-color:rgb(206, 206, 216);
+            }
+            .container {
+                margin: 10px;
+                padding:10px 5px;
+                width: 125px;
+                border: none;
+                box-shadow: 2px 2px 3px 2px
+                rgba(38,60,100,0.5);
+                background-color:white;
+            }
+            h1 {
+                font-family: "Courier New", sans-serif;
+                display: inline-block;
+                padding:1px 1px;
+                margin:0;
+            }
+            /*New update: The nth-child pseudoclass
+            nw gives the same effect as the 8-line 
+            code below in just 4 lines*/
+            h1:nth-child(odd) {
+                background-color: black;
+                color: white;
+            }
+            /*.primitive_1 {
+                background-color: black;
+                color: white;
+            }
+            .primitive_2 {
+                background-color:  white;
+                color: black;
+            }*/
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h1 class="primitive_1">W</h1>
+            <h1 class="primitive_2">I</h1>
+            <h1 class="primitive_1">R</h1>
+            <h1 class="primitive_2">E</h1>
+            <h1 class="primitive_1">D</h1>
+        </div>
+        <h2>
+            Narration/description of project:
+        </h2>
+        <p>
+            In this project, i try to replicate the logo
+            of the News website 'Wired'. It is made solely using css
+            and the method is explained below.
+        </p>
+        <h3>
+            Method:
+        </h3>
+        <p>
+            <ul>
+                <li>
+                    First, i create a div container for the texts
+                </li>
+                <li>
+                    I then created h1 elements for each letter of the word/logo.
+                </li>
+                <li>
+                    Afterwards, i created two classes to be alternated
+                    when attributing class names to the h1 elements.
+                    This is to make the inverted background-color 
+                    and color effect possible.
+                </li>
+                <li>
+                    I proceed to style the page using internal styling
+                    in the header section. 
+                </li>
+            </ul>
+            <h3>
+                Pitfalls:
+            </h3>
+            <p>
+                <ul>
+                    <li>I did not get the exact font used for the 'wired'
+                        logo, i used an alternative, a similar looking font.
+                    </li>
+                    <li>
+                        I could not get the square effect the background colors
+                         of each letters had accurately.
+                        <strong>Note:</strong>I will work on that.
+                    </li>
+                    <li>
+                        I think there should/could be an easier, sleekier and more effective
+                        way of going about the design. Perhaps through the use of the
+                        nth-child pseudoclass. Remember, code should be made as simple as possible.
+                        <p><strong>Update:</strong>The nth-child pseudoclass has now replaced
+                        the initial code, making the code simpler, shorter and more elegant.</p>
+                    </li>
+                    </ul>
+        </p>
+    </body>
+</html>
